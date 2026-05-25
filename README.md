@@ -45,7 +45,7 @@ Bu proje, UCI Machine Learning Repository'de yayımlanan **Türkiye Student Eval
 
 - **Önemli bulgu:** Devamsızlık (attendance) zorluk algısını belirleyen en güçlü faktör (Gain ratio=0.330); Q sorularından ilk giren Q17 (öğretmen dakikliği, 0.027)
 
-### 3. Birliktelik Kuralları — FP-Growth
+### 3. Birliktelik Kuralları - Apriori
 - **Ön işleme:** Equal frequency discretization, 3 aralık
 - **Parametreler:** Min. destek=%10, Min. güven=%60
 - **Üretilen kural sayısı:** 10.000
