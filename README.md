@@ -94,6 +94,13 @@ Bu proje, UCI Machine Learning Repository'de yayımlanan **Türkiye Student Eval
 
 ---
 
+## 📺 İçerik
+
+- 🎬 **YouTube:** [Analiz Serisi — Kümeleme, Sınıflandırma, Birliktelik Kuralları](https://www.youtube.com/watch?v=WtlYlmIjtrU&list=PL8jI6BBj7HixdMJatHLhiIrqd_6_dcS_G&pp=sAgC)
+- 📝 **Medium:** [Rapor yazısı](https://medium.com/@ugur3774keskin/turkiye-student-evaluation-veri-madenciliği-analizi-ec8f7f84ca9c)
+  
+---
+
 ## 👤 İletişim
 
 **Uğur Keskin**
