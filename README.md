@@ -16,8 +16,8 @@ Bu proje, UCI Machine Learning Repository'de yayımlanan **Türkiye Student Eval
 
 **Değişkenler:**
 - `Q1–Q12` → Ders içeriği değerlendirme soruları (Likert, 1–5)
-- `Q13–Q28` → Öğretim görevlisi performansı değerlendirme soruları (Likert, 1–5)
-- `instr` → Öğretim görevlisi kodu (kategorik)
+- `Q13–Q28` → Eğitmen performansı değerlendirme soruları (Likert, 1–5)
+- `instr` → Eğitmen kodu (kategorik)
 - `class` → Ders kodu (kategorik)
 - `nb.repeat` → Dersin kaçıncı kez alındığı
 - `attendance` → Devam durumu
@@ -43,14 +43,14 @@ Bu proje, UCI Machine Learning Repository'de yayımlanan **Türkiye Student Eval
 | F1 | 0.468 |
 | MCC | 0.305 |
 
-- **Önemli bulgu:** Devamsızlık (attendance) zorluk algısını belirleyen en güçlü faktör (Gain ratio=0.330); Q sorularından ilk giren Q17 (öğretmen dakikliği, 0.027)
+- **Önemli bulgu:** Devamsızlık (attendance) zorluk algısını belirleyen en güçlü faktör (Gain ratio=0.330); Q sorularından ilk giren Q17 (eğitmen dakikliği, 0.027)
 
 ### 3. Birliktelik Kuralları - Apriori
 - **Ön işleme:** Equal frequency discretization, 3 aralık
 - **Parametreler:** Min. destek=%10, Min. güven=%60
 - **Üretilen kural sayısı:** 10.000
-- **Öne çıkan örüntü:** `nb.repeat=1` + yüksek öğretmen puanları birlikteliği (Conf=0.989, Lift≈2.0)
-- **Bulgu:** Dersi ilk kez alan öğrenciler öğretmeni sistematik olarak daha olumlu değerlendiriyor
+- **Öne çıkan örüntü:** `nb.repeat=1` + yüksek eğitmen puanları birlikteliği (Conf=0.989, Lift≈2.0)
+- **Bulgu:** Dersi ilk kez alan öğrenciler eğitmeni sistematik olarak daha olumlu değerlendiriyor
 
 ---
 
@@ -86,9 +86,9 @@ Bu proje, UCI Machine Learning Repository'de yayımlanan **Türkiye Student Eval
 
 ## 📌 Temel Bulgular
 
-> Devamsızlık, öğrencinin dersi zorluk algısını belirleyen **en kritik faktördür** — öğretmen veya ders içeriği sorularından yaklaşık 4 kat daha etkili.
+> Devamsızlık, öğrencinin dersi zorluk algısını belirleyen **en kritik faktördür** — öğretim görevlisi veya ders içeriği sorularından yaklaşık 4 kat daha etkili.
 
-> Dersi **ilk kez alan öğrenciler** öğretmeni sistematik olarak daha olumlu değerlendirmektedir. Bu bulgu, tekrar eden öğrencilerin daha eleştirel bir bakış açısıyla değerlendirme yaptığına işaret etmektedir.
+> Dersi **ilk kez alan öğrenciler** öğretim görevlisini sistematik olarak daha olumlu değerlendirmektedir. Bu bulgu, tekrar eden öğrencilerin daha eleştirel bir bakış açısıyla değerlendirme yaptığına işaret etmektedir.
 
 > K-Means kümeleme, öğrenci profillerinin **tek boyutlu olmadığını** ortaya koymaktadır — derse, eğitmene ve devam durumuna göre anlamlı alt gruplar oluşmaktadır.
 
